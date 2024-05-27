@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920">
+    <title>KOTI Koliving House</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <!-- 슬라이드 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- 스크롤 css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 공통 -->
+    <!-- 마우스 -->
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
+    <!-- 이모지 톡 -->
+    <div class="counseling">
+        <div class="mimoji">
+            <img src="./images/mimoji.gif" alt="1:1상담">
+            <img src="./images/lets_talk.png" alt="" class="lets_talk">
+        </div>
+        <div class="mimoji_box" cursor-class="arrow">
+        </div>
+        <div class="talk_box_big">
+            <div class="talk_box_top">
+                <img src="./images/talk_box_btn.png" alt="닫기 버튼" class="talk_box_btn" cursor-class="arrow">
+                <p>Message</p>
+            </div>
+            <div class="talk_box_text">
+                <h4>
+                    Welcome to KOTI 🏠
+                </h4>
+                <h2>
+                    반가워요<br>
+                    궁금한 게 있으신가요?
+                </h2>
+                <a href="#">
+                    <div class="talk_box_in">
+                        <h5>코티 코리빙 의뢰하기</h5>
+                        <h3>
+                            코티의 도움이 <br>
+                            필요하신가요?
+                        </h3>
+                        <div class="talk_box_mimoji">
+                            <img src="./images/talk_box_mimoji1.png" alt="챗봇 상담">
+                            <p>
+                                챗봇 상담과 1:1 상담이 준비되어 있습니다. <br>
+                                궁금하신 질문을 선택해주세요.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="talk_box_in pink">
+                        <h5>코티 인재풀에 등록하기</h5>
+                        <h3>
+                            코티 팀에 합류하는
+                            가장 빠른 방법
+                        </h3>
+                        <div class="talk_box_mimoji">
+                            <img src="./images/talk_box_mimoji2.png" alt="챗봇 상담">
+                            <p>
+                                코티는 상시 채용을 진행합니다. 새로운 자리가 날 경우 이력서가 사전 등록된 인재풀에서 가장 먼저 적임자를 찾습니다.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- 메뉴 -->
+    <div class="scroll-menu">
+        <div class="header_bg"></div>
+        <div class="header_bg_line"></div>
+        <div class="gnb">
+            <div class="top_logo" cursor-class="arrow">
+                <a href="./index.html"><img src="./images/top_logo.png" alt="코티 로고"></a>
+            </div>
+            <ul class="nav">
+                <li><a href="./sub1.html" cursor-class="arrow">what is koti?</a>
+                    <ul class="sub">
+                        <li>
+                            <div class="solid"></div>
+                        </li>
+                        <li><a href="./sub1.html">brand story</a></li>
+                        <li><a href="./sub1.html">koti Bi</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub2.html" cursor-class="arrow">Locations</a>
+                    <ul class="sub">
+                        <li>
+                            <div class="solid"></div>
+                        </li>
+                        <li><a href="./sub2.html">hannam</a></li>
+                        <li><a href="./sub2.html">seongsu</a></li>
+                        <li><a href="./sub2.html">nonhyeon</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub3.html" cursor-class="arrow">community</a>
+                    <ul class="sub">
+                        <li>
+                            <div class="solid"></div>
+                        </li>
+                        <li><a href="./sub3.html#id_now_campaign">이달의 캠페인</a></li>
+                        <li><a href="./sub3.html#id_campaign_story">캠페인 후기</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub4.html" cursor-class="arrow">Support</a>
+                    <ul class="sub">
+                        <li>
+                            <div class="solid"></div>
+                        </li>
+                        <li><a href="./sub4.html#id_information">위치 안내</a></li>
+                        <li><a href="./sub4.html#id_faq">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub5.html" cursor-class="arrow">Booking</a>
+                    <ul class="sub">
+                        <li>
+                            <div class="solid"></div>
+                        </li>
+                        <li><a href="./sub5.html#id_booking">예약 및 상담</a></li>
+                        <li><a href="./sub5.html#id_membership">멤버쉽 소개</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="tel">
+                <img src="./images/icon_phone_white.png" alt="코티 고객센터">
+                <p>1600-4290</p>
+            </div>
+        </div>
+    </div>
+    <!-- 사이드 네비게이션 -->
+    <div class="side_nav" cursor-class="arrow">
+        <ul>
+            <li class="side_nav_list"><a href="#index_home">
+                    <span class="side_nav_menu">home</span>
+                    <span class="side_nav_bullet"></span></a>
+            </li>
+            <li class="side_nav_list"><a href="#index_location">
+                    <span class="side_nav_menu">location</span>
+                    <span class="side_nav_bullet"></span></a>
+            </li>
+            <li class="side_nav_list"><a href="#index_roomtype">
+                    <span class="side_nav_menu">room type</span>
+                    <span class="side_nav_bullet"></span></a>
+            </li>
+            <li class="side_nav_list"><a href="#index_sharedspace">
+                    <span class="side_nav_menu">shared space</span>
+                    <span class="side_nav_bullet"></span></a>
+            </li>
+            <li class="side_nav_list"><a href="#index_newsculture">
+                    <span class="side_nav_menu">news & culture</span>
+                    <span class="side_nav_bullet"></span></a>
+            </li>
+            <li class="side_nav_list"><a href="#index_tour">
+                    <span class="side_nav_menu">tour</span>
+                    <span class="side_nav_bullet"></span></a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- 본문시작 -->
+    <!-- page1 메인 슬라이드 -->
+    <div id="index_home" class="swiper-container slide page page1">
+        <div class="scroll_down">
+            <span>&lt;</span>
+            <span>&lt;</span>
+            <span>&lt;</span>
+            <span>　scroll down</span>
+        </div>
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide ">
+                <a href="#">
+                    <video src="./images/index_page/v_1.mp4" autoplay loop muted playsinline></video>
+                </a>
+                <div class="slide_text_bg"></div>
+                <p class="slide_txt_01">동영상 수정 예정</p>
+            </div>
+
+            <div class="swiper-slide ">
+                <a href="#"><img src="./images/index_page/main_banner03.png" alt="메인 배너2"></a>
+                <div class="slide_text_bg_white"></div>
+                <div class="slide_text_bg"></div>
+                <div class="slide_text_box">
+                    <h1 class="slide_txt_02 slide_txt_02_1">코티 6호점 comming soon!</h1>
+                    <p class="slide_txt_03"> 마포구는 서울의 중심에서도 창의성과 문화가 넘치는 지역입니다. 홍대입구의 활기찬 거리부터 한강공원의 평화로운 경치까지, <br>
+                        코티 6호점은 다양한 생활의 매력을 한눈에 담을 수 있는 완벽한 위치에 자리잡고 있습니다.</p>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide ">
+                <a href="#"><img src="images/index_page/main_banner_friends.jpg" alt="메인 배너3"></a>
+                <div class="slide_text_bg_white"></div>
+                <div class="slide_text_bg"></div>
+                <div class="slide_text_box">
+                    <h1 class="slide_txt_02">혼자가 아닌 둘이라 다행이야! 🧑‍🤝‍🧑</h1>
+                    <p class="slide_txt_03"> "처음 코티에 입주했을 때는 혼자 새로운 환경에 적응해야 한다는 부담감이 컸어요. 그러나 곧 쥴리를 만나고, 함께 생활하면서 그런
+                        불안이 많이 사라졌어요."<br>
+                        코티의 공용 공간에서 처음 만나, 이제는 룸메이트로 지내 된 두 사람의 이야기가 궁금하신가요?</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="slide_box">
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination" cursor-class="arrow"></div>
+
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-set" cursor-class="arrow">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <!-- page2 로케이션 -->
+    <div id="index_location" class="page page2">
+        <div class="shape_bg"><!--배경도형-->
+            <img src="./images/shape_1.png" alt="배경도형">
+            <img src="./images/shape_2.png" alt="배경도형">
+            <img src="./images/shape_3.png" alt="배경도형">
+            <img src="./images/shape_4.png" alt="배경도형">
+            <img src="./images/shape_5.png" alt="배경도형">
+        </div>
+        <div class="Locations_box"><!--본문박스-->
+            <h3 class="subject">Locations</h3>
+            <p class="description">당신의 라이프스타일에 맞는 코티의 공간을 찾아보세요.</p>
+            <!-- Swiper -->
+            <div class="swiper-container gallery-center">
+                <div class="gallery-center_inner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/index_page/hanman.png" alt="코티 한남점"
+                                    class="location_img_main">
+                                <div class="location_img_bg"></div>
+                                <div class="Locations_text_box">
+                                    <p>koti han-nam</p>
+                                </div>
+                                <div class="Locations_text_box2">
+                                    <h3>01</h3>
+                                    <h2>코티 한남점 🌍</h2>
+                                    <p>
+                                        도시의 인프라와 뛰어난 교통 접근성을 가진 코리빙 하우스
+                                    </p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/index_page/seongsu1.png" alt="코티 성수점"
+                                    class="location_img_main">
+                                <div class="location_img_bg"></div>
+                                <div class="Locations_text_box">
+                                    <p>koti seong-su</p>
+                                </div>
+                                <div class="Locations_text_box2">
+                                    <h3>02</h3>
+                                    <h2>코티 성수점 🎨</h2>
+                                    <p>
+                                        성수동의 창의적인 문화 공간들로 풍부한 문화생활을 <br> 느낄 수 있는 코리빙 하우스
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/index_page/nonhyeon.png" alt="코티 논현점"
+                                    class="location_img_main">
+                                <div class="location_img_bg"></div>
+                                <div class="Locations_text_box">
+                                    <p>koti non-hyeon</p>
+                                </div>
+                                <div class="Locations_text_box2">
+                                    <h3>03</h3>
+                                    <h2>코티 논현점 🖼️</h2>
+                                    <p>
+                                        서울 중심부에 위치해 있으며, 영감이 떠오르는 시설들이 <br> 준비된 코리빙 하우스
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/index_page/jeonpo.png" alt="코티 부산 전포점"
+                                    class="location_img_main">
+                                <div class="location_img_bg"></div>
+                                <div class="Locations_text_box">
+                                    <p>koti jeon-po</p>
+                                </div>
+                                <div class="Locations_text_box2">
+                                    <h3>04</h3>
+                                    <h2>코티 부산 전포점 ☕</h2>
+                                    <p>
+                                        부산 전포 카페거리 속에 위치해 여유를 느끼며 <br> 감성을 재충전할 코리빙 하우스
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/index_page/sokcho.png" alt="코티 강원 속초점"
+                                    class="location_img_main">
+                                <div class="location_img_bg"></div>
+                                <div class="Locations_text_box">
+                                    <p>koti sok-cho</p>
+                                </div>
+                                <div class="Locations_text_box2">
+                                    <h3>05</h3>
+                                    <h2>코티 강원 속초점 🏖️</h2>
+                                    <p>
+                                        한적한 바다가 내려다 보이는 오션뷰 코리빙 하우스
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 화살표 버튼 -->
+                    <!-- <div class="swiper-button-set2">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div> -->
+                    <!-- 블릿 버튼 -->
+                    <div class="swiper-pagination" cursor-class="arrow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page3 룸인한남 -->
+    <div id="index_roomtype" class="page page3">
+        <div class="room_box">
+            <h3 class="subject" data-aos="fade-left">Room in <span>HAN-NAM</span></h3>
+            <p class="description" data-aos="fade-left">혼자 또는 둘이서, 편히 쉴 수 있는 개인공간을 미리 둘러보세요.</p>
+            <div class="tab">
+                <ul class="tabnav" data-aos="fade-left" data-aos-delay="200" cursor-class="arrow">
+                    <li><a href="#tab01">
+                            <div class="tabsolid"></div>terrace type
+                        </a></li>
+                    <li><a href="#tab02">
+                            <div class="tabsolid"></div> shared type
+                        </a></li>
+                    <li><a href="#tab03">
+                            <div class="tabsolid"></div>alpha type
+                        </a></li>
+
+                    <li><a href="#tab04">
+                            <div class="tabsolid"></div>flat a type
+                        </a></li>
+                    <li><a href="#tab05">
+                            <div class="tabsolid"></div>flat b type
+                        </a></li>
+
+                </ul>
+                <div class="tabcontent">
+                    <div id="tab01">
+                        <div class="tab_img">
+                            <img src="./images/index_page/terrace_type_02.png" alt="공용타입2">
+                            <img src="./images/index_page/terrace_type_01.png" alt="공용타입1">
+                        </div>
+                        <div class="tab_text_box">
+                            <h3>TERRACE TYPE</h3>
+                            <p>
+                                나만의 프라이빗 테라스가 있는 스페셜한 분리된 복층 공간을 활용하여 홈 오피스, 드레스 룸, 침실 등 나만의 방을 꾸며 보세요.
+                            </p>
+
+                            <div class="tab_btn" cursor-class="arrow">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab02">
+                        <div class="tab_img">
+                            <img src="./images/index_page/shares_type_01.png" alt="공용타입1">
+                            <img src="./images/index_page/shares_type_02.png" alt="공용타입2">
+                            <img src="./images/index_page/shares_type_03.png" alt="공용타입3">
+                        </div>
+                        <div class="tab_text_box">
+                            <h3>shared type</h3>
+                            <p>두 개의 문, 하나의 주방. <br>
+                                함께 살지만 개인의 공간은 유지하고 공동의 공간도 마련해 두고 싶은 사람들을 위한 공간. <br>
+                                가운데 위치한 하나의 부엌과 다이닝 공간에 두 개의 독립된 방과 화장실이 마련되어 있어요.</p>
+
+                            <div class="tab_btn" cursor-class="arrow">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab03">
+                        <div class="tab_img">
+                            <img src="./images/index_page/alpha_type_01.png" alt="공용타입1">
+                            <img src="./images/index_page/alpha_type_02.png" alt="공용타입2">
+                        </div>
+                        <div class="tab_text_box">
+                            <h3>ALPHA TYPE</h3>
+                            <p>
+                                독립된 방과 넓은 거실, 드레스룸을 갖춘 ALPHA B TYPE은 코티에서 가장 넓은 평수를 자랑합니다. 리된 생활 공간이 필요한 1인 가구부터 함께 생활하는
+                                2인까지
+                                혼자여도, 둘 이어도 누구에게나 편안한 공간을 제공합니다.
+                            </p>
+
+                            <div class="tab_btn" cursor-class="arrow">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab04">
+                        <div class="tab_img">
+                            <img src="./images/index_page/flat_a_01.png" alt="공용타입1">
+                            <img src="./images/index_page/flat_a_02.png" alt="공용타입2">
+                        </div>
+                        <div class="tab_text_box">
+                            <h3>FLAT A TYPE</h3>
+                            <p>
+                                알찬 공간 활용을 위해 수납과 침대 모두 오픈형 가구들을 활용했어요.
+                                미니멀리스트라면, 공간은 좀 더 넓어 보이고 나의 라이프스타일을 살릴 수 있는 공간을 선택해보세요.
+                            </p>
+
+                            <div class="tab_btn" cursor-class="arrow">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab05">
+                        <div class="tab_img">
+                            <img src="./images/index_page/flat_b_01.png" alt="공용타입1">
+                            <img src="./images/index_page/flat_b_02.png" alt="공용타입2">
+                        </div>
+                        <div class="tab_text_box" cursor-class="arrow">
+                            <h3>FLAT B TYPE</h3>
+                            <p>
+                                개방감을 높인 오픈형된 원룸타입으로 공간을 더 넓고 더 효율적으로 활용할 수 있게 해줍니다.
+                                바쁜 일상 속에서 효율적인 삶을 추구하는 입주민을 위한 공간입니다.
+                            </p>
+
+                            <div class="tab_btn" cursor-class="arrow">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page4 공용 공간 -->
+    <div id="index_sharedspace" class="page page4">
+        <!-- 흐린배경용 -->
+        <ul class="Shared_box_bg_img">
+            <li class="visible"><img src="./images/index_page/rooftop01.png" alt="배경"></li>
+            <li><img src="./images/index_page/SHARED_LIVING_Room01.png" alt="배경"></li>
+            <li><img src="./images/index_page/SHARED_LIVING_Room02.png" alt="배경"></li>
+            <li><img src="./images/index_page/Cinema_Room.png" alt="배경"></li>
+        </ul>
+        <div class="Shared_box_bg"></div>
+        <!-- 공용 공간 본문 -->
+        <div class="Shared_box">
+            <h3 class="subject" data-aos="fade-left">Shared Space <span>SEONG-SU</span></h3>
+            <p class="description" data-aos="fade-left" data-aos-delay="300">룸이 있는 층마다 준비된 공유 거실과 코티 곳곳에 마련된 공용공간을
+                살펴보세요. </p>
+            <div class="tab_horizontal">
+                <!-- 공용공간 탭 내용 -->
+                <div class="tabcontent_horizontal">
+                    <div id="btn01" class="tab_horizontal_box">
+                        <div class="tab_horizontal_img">
+                            <img src="./images/index_page/SHARED_LIVING_Room01.png" alt="공용 거실">
+                            <img src="./images/index_page/SHARED_LIVING_Room02.png" alt="공용 거실">
+                            <img src="./images/index_page/SHARED_LIVING_Room03.png" alt="공용 거실">
+                        </div>
+                        <div class="tab_horizontal_text">
+                            <h4>SHARED LIVING Room</h4>
+                            <p>개인 룸이 있는 층마다, 다른 테마를 가진 공유 거실이 준비되어 있습니다.</p>
+                            <div class="tab_horizontal_btn">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn" cursor-class="arrow">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn" cursor-class="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn02" class="tab_horizontal_box">
+                        <div class="tab_horizontal_img">
+                            <img src="./images/index_page/LOUNGE_01.png" alt="라운지">
+                            <img src="./images/index_page/LOUNGE_02.png" alt="라운지">
+                        </div>
+                        <div class="tab_horizontal_text">
+                            <h4>koti LOUNGE</h4>
+                            <p>쾌적하고 넓은 코티만의 라운지에서 새로운 사람을 만나고, 일상의 이야기를 나눠보세요.</p>
+                            <div class="tab_horizontal_btn">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn" cursor-class="arrow">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn" cursor-class="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn03" class="tab_horizontal_box">
+                        <div class="tab_horizontal_img">
+                            <img src="./images/index_page/SHARED_COOKING.png" alt="공용 거실">
+                        </div>
+                        <div class="tab_horizontal_text">
+                            <h4>SHARED COOKING</h4>
+                            <p>모든 게 갖춰진 공용 주방에서 함께 요리하고, 맛있는 식사를 즐겨보세요.</p>
+                            <div class="tab_horizontal_btn">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn" cursor-class="arrow">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn" cursor-class="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn04" class="tab_horizontal_box">
+                        <div class="tab_horizontal_img">
+                            <img src="./images/index_page/SHARED_wasing.png" alt="공용 세탁실">
+                        </div>
+                        <div class="tab_horizontal_text">
+                            <h4>SHARED wasing</h4>
+                            <p>최신 세탁 기기들이 완비된 공용 세탁소로,일상 생활이 한결 간편해집니다.</p>
+                            <div class="tab_horizontal_btn">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn" cursor-class="arrow">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn" cursor-class="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn05" class="tab_horizontal_box">
+                        <div class="tab_horizontal_img">
+                            <img src="./images/index_page/Cinema_Room.png" alt="시네마룸">
+                        </div>
+                        <div class="tab_horizontal_text">
+                            <h4>Cinema Room</h4>
+                            <p>시네마룸에서 좋아하는 영화나 드라마를 함께 보며, 여가 시간을 더욱 특별하게 만들어 보세요.</p>
+                            <div class="tab_horizontal_btn">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn" cursor-class="arrow">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn" cursor-class="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn06" class="tab_horizontal_box">
+                        <div class="tab_horizontal_img">
+                            <img src="./images/index_page/TRAINING_Room.png" alt="트레이닝 룸">
+                        </div>
+                        <div class="tab_horizontal_text">
+                            <h4>TRAINING Room</h4>
+                            <p>자유롭게 이용 가능한 공용 트레이닝룸에서 건강을 챙기고, 에너지를 충전하세요.</p>
+                            <div class="tab_horizontal_btn">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn" cursor-class="arrow">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn" cursor-class="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn07" class="tab_horizontal_box">
+                        <div class="tab_horizontal_img">
+                            <img src="./images/index_page/rooftop01.png" alt="루프탑">
+                            <img src="./images/index_page/rooftop02.png" alt="루프탑">
+                        </div>
+                        <div class="tab_horizontal_text">
+                            <h4>rooftop</h4>
+                            <p>도심 속에서 별을 보고, 자연과의 휴식을 취할 수 있는 루프탑에서 여유로운 시간을 만끽하세요..</p>
+                            <div class="tab_horizontal_btn">
+                                <img src="./images/index_page/left_btn.png" alt="왼쪽넘기기" class="left_btn" cursor-class="arrow">
+                                <img src="./images/index_page/right_btn.png" alt="오른쪽넘기기" class="right_btn" cursor-class="arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 공용공간 탭 메뉴 -->
+                <ul class="tabnav_horizontal" cursor-class="arrow">
+                    <li><a href="#btn01">
+                            <div class="tabsolid2"></div>
+                            SHARED LIVING Room
+                        </a></li>
+                    <li><a href="#btn02">
+                            <div class="tabsolid2"></div>
+                            koti LOUNGE
+                        </a></li>
+                    <li><a href="#btn03">
+                            <div class="tabsolid2"></div>
+                            SHARED COOKING
+                        </a></li>
+                    <li><a href="#btn04">
+                            <div class="tabsolid2"></div>
+                            SHARED wasing
+                        </a></li>
+                    <li><a href="#btn05">
+                            <div class="tabsolid2"></div>
+                            Cinema Room
+                        </a></li>
+                    <li><a href="#btn06">
+                            <div class="tabsolid2"></div>
+                            TRAINING Room
+                        </a></li>
+                    <li><a href="#btn07">
+                            <div class="tabsolid2"></div>
+                            rooftop
+                        </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- page5 뉴스 -->
+    <div id="index_newsculture" class="page page5">
+        <div class="shape_bg">
+            <img src="./images/shape_4.png" alt="배경도형">
+            <img src="./images/shape_1.png" alt="배경도형">
+            <img src="./images/shape_2.png" alt="배경도형">
+            <img src="./images/shape_7.png" alt="배경도형">
+        </div>
+        <div class="news_culture_box">
+            <h3 class="subject" data-aos="fade-left">news & culture</h3>
+            <p class="description" data-aos="fade-left" data-aos-delay="300">
+                코티 커뮤니티 소식을 알아보세요!
+            </p>
+            <div class="slideposition">
+                <div class="swiper-container gallery-center news_culture_div">
+                    <div class="gallery-center_inner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/index_page/news5.png" alt="갤러리1" class="news_img">
+                                    <img src="./images/index_page/news_icon.png" alt="뉴스앤컬쳐 아이콘" class="news_icon">
+                                </a>
+                                <h3>혼자가 아닌 둘이라 다행이라 생각해요</h3>
+                                <p>코티 한남점에 입주한 지 얼마 되지 않은 최미르와 쥴리는 이미 코티의 따뜻한 커뮤니티 속에서 ...</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/index_page/news4.png" alt="갤러리1" class="news_img">
+                                    <img src="./images/index_page/news_icon.png" alt="뉴스앤컬쳐 아이콘" class="news_icon">
+                                </a>
+                                <h3>KOTI Plogging Day Vol.3</h3>
+                                <p>23년 8월 12일 속초해수욕장 근처에서 진행된
+                                    코티 플로깅데이! 코티의 각 지점에서 모인 72 ...</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/index_page/news3.png" alt="갤러리1" class="news_img">
+                                    <img src="./images/index_page/news_icon.png" alt="뉴스앤컬쳐 아이콘" class="news_icon">
+                                </a>
+                                <h3>코티 코리빙 팝업스토어 오픈 in 성수</h3>
+                                <p>삶과 쉼이 조화되는 커뮤니티형 생활 환경에 삼성
+                                    스마트싱스가 연계되는 차별화된 주거 경험을 ...</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/index_page/news2.png" alt="갤러리1" class="news_img">
+                                    <img src="./images/index_page/news_icon.png" alt="뉴스앤컬쳐 아이콘" class="news_icon">
+                                </a>
+                                <h3>도심 속 작은 모험. 코티 러닝 크루원 모집</h3>
+                                <p>다양한 배경과 레벨의 러너들을 환영하며, 함께 뛰며
+                                    성장할 수 있는 팀을 만들고자 화목 저녁 ...</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/index_page/news1.png" alt="갤러리1" class="news_img">
+                                    <img src="./images/index_page/news_icon.png" alt="뉴스앤컬쳐 아이콘" class="news_icon">
+                                </a>
+                                <h3>코티 6호점 오픈 임박! 위치는 어디?</h3>
+                                <p>코리빙 하우스의 선두주자, 코티가 서울 마포구에
+                                    새로운 지점을 선보일 예정입니다. 다가오는 ...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <!-- 화살표 버튼 -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper -->
+        </div>
+    </div>
+    <!-- page6 예약 -->
+    <div id="index_tour" class="page page6">
+        <div class="tour_box">
+            <div class="tour_text">
+                <p data-aos="fade-left"><b>⏱ 투어 가능 시간</b> 월, 수, 금 13:00 ~ 20:30</p>
+                <h3 class="subject" data-aos="fade-left">방문 상담시 <br>
+                    특별한 선물과 혜택을 드려요</h3>
+                <a href="#" class="tour_btn" data-aos="fade-left" data-aos-delay="200">투어 상담 신청하기</a>
+                <!-- Swiper -->
+            </div>
+        </div>
+        <footer>
+            <div class="footer_in">
+                <div class="footer_left">
+                    <div class="footer_logo"><a href="#"><img src="./images/logo_1_2.png" alt="푸터 로고"></a></div>
+                    <div class="footer_adress">
+                        <h4>KOTI Corporation</h4>
+                        <p>서울특별시 마포구 서강로 121</p>
+                    </div>
+                    <div class="footer_orther">
+                        <h4>고객 문의</h4>
+                        <p>1600-4290 (11:00~20:00) <br>
+                            support@koticorp.com <br>
+                            일요일, 공휴일 휴무</p>
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <ul class="footer_sns">
+                        <li><a href="#"><img src="./images/index_page/sns_ins.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="./images/index_page/sns_you.png" alt="유튜브"></a></li>
+                        <li><a href="#"><img src="./images/index_page/sns_face.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="./images/index_page/sns_call.png" alt="전화"></a></li>
+                    </ul>
+                    <h4>copyright 2024 koti corp. all rights reserved</h4>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>

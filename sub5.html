@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920" />
+    <title>KOTI Koliving House</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <!-- 슬라이드 css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- 스크롤 css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/sub5.css" />
+  </head>
+
+  <body>
+    <!-- 공통 -->
+    <!-- 마우스 -->
+    <div id="cursor">
+      <div class="cursor__circle"></div>
+    </div>
+    <!-- 이모지 톡 -->
+    <div class="counseling">
+      <div class="mimoji">
+        <img src="./images/mimoji.gif" alt="1:1상담" />
+        <img src="./images/lets_talk.png" alt="" class="lets_talk" />
+      </div>
+      <div class="mimoji_box" cursor-class="arrow"></div>
+      <div class="talk_box_big">
+        <div class="talk_box_top">
+          <img
+            src="./images/talk_box_btn.png"
+            alt="닫기 버튼"
+            class="talk_box_btn"
+            cursor-class="arrow"
+          />
+          <p>Message</p>
+        </div>
+        <div class="talk_box_text">
+          <h4>Welcome to KOTI 🏠</h4>
+          <h2>
+            반가워요<br />
+            궁금한 게 있으신가요?
+          </h2>
+          <a href="#">
+            <div class="talk_box_in">
+              <h5>코티 코리빙 의뢰하기</h5>
+              <h3>
+                코티의 도움이 <br />
+                필요하신가요?
+              </h3>
+              <div class="talk_box_mimoji">
+                <img src="./images/talk_box_mimoji1.png" alt="챗봇 상담" />
+                <p>
+                  챗봇 상담과 1:1 상담이 준비되어 있습니다. <br />
+                  궁금하신 질문을 선택해주세요.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="talk_box_in pink">
+              <h5>코티 인재풀에 등록하기</h5>
+              <h3>코티 팀에 합류하는 가장 빠른 방법</h3>
+              <div class="talk_box_mimoji">
+                <img src="./images/talk_box_mimoji2.png" alt="챗봇 상담" />
+                <p>
+                  코티는 상시 채용을 진행합니다. 새로운 자리가 날 경우 이력서가
+                  사전 등록된 인재풀에서 가장 먼저 적임자를 찾습니다.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 -->
+    <div class="scroll-menu">
+      <div class="header_bg"></div>
+      <div class="header_bg_line"></div>
+      <div class="gnb">
+        <div class="top_logo" cursor-class="arrow">
+          <a href="./index.html"
+            ><img src="./images/top_logo.png" alt="코티 로고"
+          /></a>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="./sub1.html" cursor-class="arrow">what is koti?</a>
+            <ul class="sub">
+              <li>
+                <div class="solid"></div>
+              </li>
+              <li><a href="./sub1.html">brand story</a></li>
+              <li><a href="./sub1.html">koti Bi</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./sub2.html" cursor-class="arrow">Locations</a>
+            <ul class="sub">
+              <li>
+                <div class="solid"></div>
+              </li>
+              <li><a href="./sub2.html">hannam</a></li>
+              <li><a href="./sub2.html">seongsu</a></li>
+              <li><a href="./sub2.html">nonhyeon</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./sub3.html" cursor-class="arrow">community</a>
+            <!-- class="now_menu" -->
+            <ul class="sub">
+              <li>
+                <div class="solid"></div>
+              </li>
+              <li><a href="./sub3.html#id_now_campaign">이달의 캠페인</a></li>
+              <li><a href="./sub3.html#id_campaign_story">캠페인 후기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./sub4.html" cursor-class="arrow">Support</a>
+            <ul class="sub">
+              <li>
+                <div class="solid"></div>
+              </li>
+              <li><a href="./sub4.html#id_information">위치 안내</a></li>
+              <li><a href="./sub4.html#id_faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./sub5.html" cursor-class="arrow">Booking</a>
+            <ul class="sub">
+              <li>
+                <div class="solid"></div>
+              </li>
+              <li><a href="./sub5.html#id_booking">예약 및 상담</a></li>
+              <li><a href="./sub5.html#id_membership">멤버쉽 소개</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="tel">
+          <img src="./images/icon_phone_white.png" alt="코티 고객센터" />
+          <p>1600-4290</p>
+        </div>
+      </div>
+    </div>
+    <!-- 사이드 네비게이션 -->
+    <div class="side_nav" cursor-class="arrow">
+      <ul>
+        <li class="side_nav_list">
+          <a href="#id_community">
+            <span class="side_nav_menu">main</span>
+            <span class="side_nav_bullet"></span
+          ></a>
+        </li>
+        <li class="side_nav_list">
+          <a href="#id_now_campaign">
+            <span class="side_nav_menu">tour</span>
+            <span class="side_nav_bullet"></span
+          ></a>
+        </li>
+        <li class="side_nav_list">
+          <a href="#id_campaign_story">
+            <span class="side_nav_menu">membership</span>
+            <span class="side_nav_bullet"></span
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 본문시작 -->
+    <!-- page1 -->
+    <div id="id_booking_main" class="page page1">
+      <div class="main_booking">
+        <img src="./images/sub5/main.jpg" alt="메인 이미지" />
+        <div class="h1_txt container">
+          <svg viewBox="0 0 1920 800">
+            <text x="50%" y="50%" dy="80px" text-anchor="middle">
+              Live at KOTI ?
+            </text>
+          </svg>
+        </div>
+        <div class="main_bottom">
+          <div class="main_txt">
+            각 지점의 내부 곳곳을 볼 수 있는 TOUR를 예약하고, <br />
+            다양한 혜택이 준비되어 있는 코티 멤버십에 대해 살펴보세요!
+          </div>
+          <div class="moveline">
+            <div class="line1">
+              <div class="line2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page2 -->
+    <div id="id_tour" class="page page2">
+      <div class="tour_box">
+        <h3 class="subject" data-aos="fade-left" data-aos-delay="200">
+          KOTI 투어 및 상담 예약 💁‍♀️
+        </h3>
+        <p class="description" data-aos="fade-left" data-aos-delay="200">
+          코티에 직접 놀러오셔서 경험해 보세요!
+        </p>
+
+        <div class="swiper-container gallery">
+          <div class="gallery_inner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/sub5/page5_hanmnam.jpg" alt="한남점" />
+                <div class="slide_txt">
+                  <div class="txt_in">
+                    <h4>코티 한남점</h4>
+                    <h5>서울 용산구 가길55 이태원로 38</h5>
+                    <p>
+                      - 6호선 한강진역 도보 5분 역세권 <br />
+                      - 한강공원 도보 15분 거리 <br />
+                      - 700개 이상의 객실 보유<br />
+                    </p>
+                  </div>
+                  <div>
+                    <a href="#none">한남점 투어 예약</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/sub5/page5_seongsu.jpg" alt="성수점" />
+                <div class="slide_txt">
+                  <div class="txt_in">
+                    <h4>코티 성수점</h4>
+                    <h5>서울특별시 성동구 연무장5가길 25</h5>
+                    <p>
+                      - 2호선 성수역 도보 3분 역세권 <br />
+                      - 주변 문화시설 인프라 우수 <br />
+                      - 300개 이상의 객실 보유 <br />
+                    </p>
+                  </div>
+                  <div>
+                    <a href="#none">성수점 투어 예약</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/sub5/page5-nonhyeon.jpg" alt="논현점" />
+                <div class="slide_txt">
+                  <div class="txt_in">
+                    <h4>코티 논현점</h4>
+                    <h5>서울특별시 강남구 강남대로 476</h5>
+                    <p>
+                      - 9호선 신분당선 도보 2분 더블 역세권 <br />
+                      - 500개 이상의 객실 보유 <br />
+                    </p>
+                  </div>
+                  <div>
+                    <a href="#none">논현점 투어 예약</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/sub5/page5_jeonpo.jpg" alt="전포점" />
+                <div class="slide_txt">
+                  <div class="txt_in">
+                    <h4>코티 부산 전포점</h4>
+                    <h5>부산 부산진구 서전로58번길 104</h5>
+                    <p>
+                      - 부산 2호선 전포역 도보 3분 역세권 <br />
+                      - 100개 이상의 객실 보유 <br />
+                      - 전포 카페거리 인근 위치 <br />
+                    </p>
+                  </div>
+                  <div>
+                    <a href="#none">전포점 투어 예약</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/sub5/page5_sokcho.jpg" alt="속초점" />
+                <div class="slide_txt">
+                  <div class="txt_in">
+                    <h4>코티 강원 속초점</h4>
+                    <h5>강원 속초시 해오름로 171</h5>
+                    <p>
+                      - 속초 고속버스 터미널 도보 10분 <br />
+                      - 속초해수욕장 도보 5분<br />
+                      - 전 객실 오션뷰<br />
+                    </p>
+                  </div>
+                  <div>
+                    <a href="#none">속초점 투어 예약</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 화살표 버튼 -->
+            <div class="slide_btn_box">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page3 -->
+    <div id="id_membership" class="page page3">
+      <div class="line10">
+        
+      </div>
+      <div class="membership">
+        <h3 class="subject" data-aos="fade-left">KOTI membership🎉</h3>
+        <p class="description" data-aos="fade-left" data-aos-delay="300">
+          코티 멤버십에 가입하고 다양한 혜택과 함께 코티를 경험해 보세요!
+        </p>
+        <div class="member_bg">
+          <img src="./images/sub5/bg_fire.png" alt="불꽃" data-aos="fade-left" data-aos-delay="300">
+          <img src="./images/sub5/bg_fire2.png" alt="불꽃" data-aos="fade-right" data-aos-delay="300">
+          <img src="./images/sub5/bg_cloud.png" alt="구름" data-aos="fade-left" data-aos-delay="300">
+          <img src="./images/sub5/bg_cloud.png" alt="구름" data-aos="fade-right" data-aos-delay="300">
+        </div>
+        <div class="membership_box">
+          <div class="membership_box1">
+            <h2>Membership Benafit !</h2>
+          </div>
+          <div class="membership_box2 membership_box2_1">
+            <div class="box2_in">
+              <h3>Abundant partnership benefits</h3>
+              <p><b>풍성한 제휴 혜택</b>을 마음껏 누려보세요</p>
+            </div>
+            <div class="box2_in2">
+              <p>
+                코티의 다양한 브랜드 파트너들이 제공하는 제휴 혜택을 언제든 누릴
+                수 있어요. 식료품, 도서, 가전, 카페 할인 등이 준비 되어 있어요.
+              </p>
+            </div>
+          </div>
+          <div class="membership_box2 membership_box2_2">
+            <div class="box2_in">
+              <h3>Always 20% off</h3>
+              <p>언제나 <b>20% 할인</b> 받을 수 있어요</p>
+            </div>
+            <div class="box2_in2">
+              <p>
+                멤버십 전용 코드를 적용하면, 언제든 20% 할인된 가격으로 코티에
+                머물 수 있어요.
+              </p>
+            </div>
+          </div>
+          <div class="membership_box2 membership_box2_3">
+            <div class="box2_in">
+              <h3>Abundant partnership benefits</h3>
+              <p>특별한 <b>멤버십 굿즈</b>를 선물해 드려요.</p>
+            </div>
+            <div class="box2_in2">
+              <p>
+                생활용품, 패션소품, 코티 이용권과 할인권 등 다양한 선물이 담긴
+                패키지를 드려요-
+              </p>
+            </div>
+          </div>
+          <div class="membership_box2 membership_box2_4">
+            <div class="box2_in">
+              <h3>Accommodation vouchers for KOTI locations</h3>
+              <p>매달 한 번! 다른 코티 지점 <b>숙박 이용권</b>을 드려요</p>
+            </div>
+            <div class="box2_in2">
+              <p>
+                다른 지점의 코티에서 살아볼 수 있는 2박 3일 숙박권을 세 달에 한
+                번, 1박 2일로 머물 수 있는 숙박권을 한 달에 한 번 드려요.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <!-- <div class="footer_btn">
+                🡅
+            </div> -->
+        <div class="footer_in">
+          <div class="footer_left">
+            <div class="footer_logo">
+              <a href="#"
+                ><img src="./images/top_logo.png" alt="푸터 로고"
+              /></a>
+            </div>
+            <div class="footer_adress">
+              <h4>KOTI Corporation</h4>
+              <p>서울특별시 마포구 서강로 121</p>
+            </div>
+            <div class="footer_orther">
+              <h4>고객 문의</h4>
+              <p>
+                1600-4290 (11:00~20:00) <br />
+                support@koticorp.com <br />
+                일요일, 공휴일 휴무
+              </p>
+            </div>
+          </div>
+          <div class="footer_right">
+            <ul class="footer_sns">
+              <li>
+                <a href="#"
+                  ><img src="./images/sns_insta.png" alt="인스타그램"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/sns_youtube.png" alt="유튜브"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/sns_facebook.png" alt="페이스북"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/sns_call.png" alt="전화"
+                /></a>
+              </li>
+            </ul>
+            <h4>copyright 2024 koti corp. all rights reserved</h4>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script/sub5.js"></script>
+  </body>
+</html>
