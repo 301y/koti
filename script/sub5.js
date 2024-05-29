@@ -177,8 +177,8 @@ $(function () {
         // .page3 내에서의 스크롤 위치 비율 계산
         var scrollPositionWithinPage3 = (scrollPosition - page3Top) / page3Height;
     
-        // .page3의 하단 70% 이상에서의 스크롤 처리
-        var isScrollingUpWithinPage3Bottom70 = delta < 0 && scrollPositionWithinPage3 >= 0.3;
+        // .page3의 하단 5% 이상에서의 스크롤 처리
+        var isScrollingUpWithinPage3Bottom70 = delta < 0 && scrollPositionWithinPage3 >= 0.05;
         // .page3의 전체 범위 내에서의 하단으로 스크롤 처리
         var isScrollingDownIntoPage3 = delta > 0 && div === 2;
     

@@ -1,5 +1,23 @@
 
 
+$(document).ready(function(){
+    $(".bot_menu li a").click(function(e){
+        e.preventDefault(); // 기본 이벤트 방지
+
+        // 모든 bot_on 클래스 제거 후 클릭된 요소에만 클래스 추가
+        $(".bot_menu li a").removeClass("bot_on");
+        $(this).addClass("bot_on");
+
+        // 모든 mab_on 클래스 제거
+        $(".bot_mab div").removeClass("mab_on");
+
+        // 클릭된 요소의 인덱스에 따라 mab_on 클래스 추가
+        var index = $(".bot_menu li a").index(this);
+        $(".bot_mab>div").eq(index).addClass("mab_on");
+    });
+});
+
+
 //page4 푸터
 $(document).ready(function() {
   $('footer').on('mouseover', function() {
@@ -27,6 +45,7 @@ $(function () {
         });
         updateNavigation();
         updategnb1();
+        updateAniOnClass();
     }
 
     function updateNavigation() {
@@ -47,22 +66,31 @@ $(function () {
         // isInSpecialDiv가 참일 경우에만 클래스 추가
         if (isInSpecialDiv1) {
             $('.scroll-menu').addClass('scroll-fixed');
-            $('.mimoji .lets_talk').css('opacity', '0');
+            $('.up_btn').addClass('up_on');
         }
         else {
             $('.scroll-menu').removeClass('scroll-fixed');
-            $('.mimoji .lets_talk').css('opacity', '1');
+            $('.up_btn').removeClass('up_on');
         }
-
     }
+
+    function updateAniOnClass() {
+        $divs.removeClass('ani_on');
+        if (div >= 0 && div < $divs.length) {
+            $divs.eq(div).addClass('ani_on');
+        }
+    }
+
+    
     ////////
     $('.nav').mouseenter(function () {
         updateNavigation(); // 엔터 시에도 div 인덱스 업데이트
         $('.sub').stop(true, true).delay(100).slideDown(300);
         $('.gnb .tel img').css('filter', 'invert(1)');
         $('.header_bg, .header_bg_line').css('opacity', '1');
-        //$('.nav li .now_menu').css('background-color', '#ed570000');
-        updateMenuStyleFirst();
+        $('.header_bg').stop(true, true).animate({ height: '350px' }, 100, 'linear');
+        $('.gnb .nav>li>a, .gnb .tel').css('color', '#333');
+        $('.nav li .now_menu').css('background', 'none');
     });
 
     $('.scroll-menu').mouseleave(function () {
@@ -70,42 +98,15 @@ $(function () {
         $('.sub').stop(true, true).slideUp(300);
         $('.header_bg').stop(true, true).animate({ height: '0px' }, 100, 'linear');
         $('.header_bg, .header_bg_line').css('opacity', '0');
-        //$('.nav li .now_menu').css('background-color', '#ed5700');
-        resetToInitialStyleFirst(); // 초기 스타일로 되돌리기
+        $('.gnb .nav>li>a, .gnb .tel').css('color', '#fff');
+        $('.gnb .tel img').css('filter', 'none');
+        $('.nav li .now_menu').css('background', '#ed5700');
     });
-
-    // 스타일 업데이트 함수
-    function updateMenuStyleFirst() {
-        if (div >= 1 && div <= 5) {
-            $('.header_bg').stop(true, true).animate({ height: '280px' }, 100, 'linear');
-            $('.gnb .nav>li>a, .gnb .tel').css('color', '#333');
-        } else {
-            $('.header_bg').stop(true, true).animate({ height: '350px' }, 100, 'linear');
-            $('.gnb .nav>li>a, .gnb .tel').css('color', '#333');
-            $('.nav li .now_menu').css('background', 'none');
-        }
-    }
-
-    // 초기 스타일로 되돌리는 함수
-    function resetToInitialStyleFirst() {
-        if (div >= 1 && div <= 5) {
-            $('.gnb .nav>li>a, .gnb .tel').css('color', 'none');
-            //$('.gnb nav>li>.now_menu').css('color', '#fff');
-            $('.gnb .tel img').css('filter', 'invert(1)');
-        } else {
-            //$('.gnb nav>li>.now_menu').css('color', '#fff');
-            $('.gnb .nav>li>a, .gnb .tel').css('color', '#fff');
-            $('.gnb .tel img').css('filter', 'none');
-            $('.nav li .now_menu').css('background', '#ed5700');
-        }
-    }
-    ////////
 
     // 스크롤 이벤트 및 스크롤 휠 이벤트 처리
     window.addEventListener('mousewheel', function(e) {
         $('html').css('scroll-behavior', 'auto');
-        if (!$(e.target).closest('.talk_box_big').length) {
-            var delta = e.wheelDelta > 0 || e.detail < 0 ? -1 : 1;
+        var delta = e.wheelDelta > 0 || e.detail < 0 ? -1 : 1;
     
             div += delta;
             div = Math.max(0, Math.min(div, $divs.length - 1));
@@ -118,7 +119,6 @@ $(function () {
             });
     
             e.preventDefault();
-        }
     }, { passive: false });
     
     $(window).on('scroll', function() {

@@ -254,7 +254,7 @@ $(function () {
         var scrollPositionWithinPage3 = (scrollPosition - page3Top) / page3Height;
     
         // .page3의 하단 n% 이상에서의 스크롤 처리
-        var isScrollingUpWithinPage3Bottom70 = delta < 0 && scrollPositionWithinPage3 >= 0.1;
+        var isScrollingUpWithinPage3Bottom70 = delta < 0 && scrollPositionWithinPage3 >= 0.04;
         var isScrollingDownIntoPage3 = delta > 0 && div === 2;
     
         if (!(div === 2 && page3.length && (isScrollingDownIntoPage3 || isScrollingUpWithinPage3Bottom70))) {
