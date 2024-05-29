@@ -81,6 +81,13 @@ $(function () {
             $(this).toggleClass('active', i === div)
                 .find('.side_nav_bullet').text(i === div ? '○' : '●');
         });
+        $('.side_nav_list').each(function (i) {
+            // div 값이 3일 경우, i가 2일 때와 동일하게 처리하기 위한 조건 추가
+            var effectiveDiv = (div == 3) ? 2 : div; // div가 3이면 effectiveDiv를 2로 설정하고, 그렇지 않으면 원래의 div 값을 사용
+            $(this).toggleClass('active', i === effectiveDiv)
+                   .find('.side_nav_bullet').text(i === effectiveDiv ? '○' : '●');
+        });
+        
     }
 
     function updategnb1() {
@@ -164,35 +171,21 @@ $(function () {
     ////////
 
     // 스크롤 이벤트 및 스크롤 휠 이벤트 처리
-    window.addEventListener('mousewheel', function (e) {
+     window.addEventListener('mousewheel', function (e) {
         $('html').css('scroll-behavior', 'auto');
-        var delta = e.wheelDelta > 0 || e.detail < 0 ? -1 : 1;
-        
-        // .page3에 대한 조건을 확인
-        var page3 = $('.page3');
-        var page3Top = page3.offset().top;
-        var scrollPosition = $(window).scrollTop();
-        var page3Height = page3.outerHeight();
-        
-        // .page3 내에서의 스크롤 위치 비율 계산
-        var scrollPositionWithinPage3 = (scrollPosition - page3Top) / page3Height;
-    
-        // .page3의 하단 5% 이상에서의 스크롤 처리
-        var isScrollingUpWithinPage3Bottom70 = delta < 0 && scrollPositionWithinPage3 >= 0.05;
-        // .page3의 전체 범위 내에서의 하단으로 스크롤 처리
-        var isScrollingDownIntoPage3 = delta > 0 && div === 2;
-    
-        if (!(div === 2 && page3.length && (isScrollingDownIntoPage3 || isScrollingUpWithinPage3Bottom70))) {
+        if (!$(e.target).closest('.talk_box_big, page2').length) {
+            var delta = e.wheelDelta > 0 || e.detail < 0 ? -1 : 1;
+
             div += delta;
             div = Math.max(0, Math.min(div, $divs.length - 1));
-    
+
             $('html,body').stop().animate({
                 scrollTop: $divs.eq(div).offset().top
             }, 400, function () {
                 $('html').css('scroll-behavior', 'smooth');
                 updateDivIndexAndNav();
             });
-    
+
             e.preventDefault();
         }
     }, { passive: false });

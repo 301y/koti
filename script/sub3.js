@@ -237,37 +237,27 @@ $(function () {
             $('.now_menu').css('background', 'none');
         }
     }
-    ////////
 
     // 스크롤 이벤트 및 스크롤 휠 이벤트 처리
     window.addEventListener('mousewheel', function (e) {
         $('html').css('scroll-behavior', 'auto');
-        var delta = e.wheelDelta > 0 || e.detail < 0 ? -1 : 1;
-        
-        // .page3에 대한 조건을 확인
-        var page3 = $('.page3');
-        var page3Top = page3.offset().top;
-        var scrollPosition = $(window).scrollTop();
-        var page3Height = page3.outerHeight();
-        
-        // .page3 내에서의 스크롤 위치 비율 계산
-        var scrollPositionWithinPage3 = (scrollPosition - page3Top) / page3Height;
-    
-        // .page3의 하단 n% 이상에서의 스크롤 처리
-        var isScrollingUpWithinPage3Bottom70 = delta < 0 && scrollPositionWithinPage3 >= 0.04;
-        var isScrollingDownIntoPage3 = delta > 0 && div === 2;
-    
-        if (!(div === 2 && page3.length && (isScrollingDownIntoPage3 || isScrollingUpWithinPage3Bottom70))) {
+        var isScrollingDown = e.wheelDelta < 0;
+        var excludePage3Condition = (div === 2 && isScrollingDown) || (div === 2 && !isScrollingDown && $divs.eq(div).offset().top - $(window).scrollTop() > 10);
+
+        if (!$(e.target).closest('.talk_box_big').length && !($(e.target).closest('.page3').length && excludePage3Condition)) {
+
+            var delta = e.wheelDelta > 0 || e.detail < 0 ? -1 : 1;
+
             div += delta;
             div = Math.max(0, Math.min(div, $divs.length - 1));
-    
+
             $('html,body').stop().animate({
                 scrollTop: $divs.eq(div).offset().top
             }, 400, function () {
                 $('html').css('scroll-behavior', 'smooth');
                 updateDivIndexAndNav();
             });
-    
+
             e.preventDefault();
         }
     }, { passive: false });
