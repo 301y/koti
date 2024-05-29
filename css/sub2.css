@@ -1433,7 +1433,7 @@ footer p {
 }
 
 .footer_right {
-    text-align: right;
+    text-align: left;
 }
 
 .footer_sns {
@@ -1441,7 +1441,7 @@ footer p {
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: right;
+    justify-content: left;
 }
 
 .footer_sns li a {
