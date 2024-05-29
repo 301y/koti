@@ -402,25 +402,42 @@ font-weight: 700;
 
 
 
-/* page3 */
-.page3 {
-    height: 1780px;
+/* page3 4 */
+.page4 {
+    height: 100vh;
     background-color: #333;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.page.page3 {
+    height: 100vh;
+    background-color: #333;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: end;
 }
 .page3 .subject,
 .page3 .description{
     color: #fff;
 }
-
+.page3 .description{
+    margin-bottom: 50px;
+}
 .membership {
     width: 1320px;
-    margin: 0 auto 200px;
+    margin: 0 auto;
     position: relative;
 }
 .membership_box{
     z-index: 5;
     position: relative;
-    margin-top: 50px;
     width: 1320px;
     height: auto;
     background-color: #FFFAE8;
@@ -486,9 +503,13 @@ font-weight: 700;
     background: url(../images/sub5/box3.png) no-repeat 80% 65%; 
 }
 .membership_box2_3{
+    padding-top: 100px;
+    height: 600px;
     background: url(../images/sub5/box4.png) no-repeat 50% 65%; 
 }
 .membership_box2_4{
+    padding-top: 100px;
+    height: 600px;
     background: url(../images/sub5/box5.png) no-repeat 85% 60%; 
     transition: 0.5s;
 }
@@ -531,9 +552,9 @@ font-weight: 700;
 }
 .member_bg img:nth-child(2){
     position: absolute;
-    bottom: 50px;
-    right: -200px;
-    animation: fire 3.5s infinite;
+    top: 80px;
+    right: -180px;
+    animation: cloud 1.5s alternate infinite linear;
 }
 @keyframes fire{
     0%{
@@ -544,18 +565,18 @@ font-weight: 700;
 
     }
 }
-.member_bg img:nth-child(3){
+.member_bg2 img:nth-child(1){
     position: absolute;
     bottom: 350px;
     left: -150px;
     animation: cloud 1.5s alternate infinite linear;
 }
 
-.member_bg img:nth-child(4){
+.member_bg2 img:nth-child(2){
     position: absolute;
-    top: 80px;
-    right: -180px;
-    animation: cloud 1.5s alternate infinite linear;
+    bottom: 50px;
+    right: -200px;
+    animation: fire 3.5s infinite;
 }
 @keyframes cloud{
     0%{
@@ -592,7 +613,7 @@ footer {
 
 .footer_in {
     margin: auto;
-    width: 90%;
+    width: 100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;

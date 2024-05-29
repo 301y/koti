@@ -1,29 +1,6 @@
 @charset "utf-8";
 @import url('https://webfontworld.github.io/pretendard/Pretendard.css');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
-@font-face {
-    font-family: 'glazio_demoregular';
-    src: url('./font/glaziodemoregular-yqepq-webfont.eot');
-    src: url('./font/glaziodemoregular-yqepq-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./font/glaziodemoregular-yqepq-webfont.woff2') format('woff2'),
-        url('./font/glaziodemoregular-yqepq-webfont.ttf') format('truetype'),
-        url('./font/glaziodemoregular-yqepq-webfont.svg#glazio_demoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'super_candyregular';
-    src: url('./font/supercandy-rglzx-webfont.eot');
-    src: url('./font/supercandy-rglzx-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./font/supercandy-rglzx-webfont.woff2') format('woff2'),
-        url('./font/supercandy-rglzx-webfont.ttf') format('truetype'),
-        url('./font/supercandy-rglzx-webfont.svg#super_candyregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @font-face {
     font-family: 'glittenregular';
     src: url('./font/glitten-regular-webfont.eot');
@@ -55,11 +32,11 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0px;
+    width: 10px;
 }
 
-/* body::-webkit-scrollbar-thumb {
-    background-color: #bbb;
+body::-webkit-scrollbar-thumb {
+    background-color: #00a267;
     border-radius: 10px;
     background-clip: padding-box;
     border: 2px solid transparent;
@@ -68,7 +45,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-} */
+}
 
 a {
     color: #333333;
@@ -431,12 +408,16 @@ svg:nth-child(1) {
 
 /* page3 */
 .page3 {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
     height: auto;
 }
-
 .campaign_story {
     width: 1320px;
-    margin: 130px auto;
+    margin: 150px auto 0;
     position: relative;
 }
 
@@ -503,7 +484,7 @@ svg:nth-child(1) {
     box-sizing: border-box;
     padding: 30px;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     transition: 0.2s linear;
 }
 
@@ -522,9 +503,7 @@ svg:nth-child(1) {
 /* footer */
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: auto;
     background-color: #333;
     box-shadow: -10px 0 20px #00000010;
