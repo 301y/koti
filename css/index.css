@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url('https://webfontworld.github.io/pretendard/Pretendard.css');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* 
 display: -webkit-box;
@@ -609,7 +609,9 @@ video {
     bottom: 25%;
     text-align: center;
     z-index: 21;
-    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    text-shadow: 0px 0px 10px #0000006e;
+    font-weight: 100;
     color: #fff;
     font-size: 48px;
 }
@@ -627,6 +629,7 @@ video {
     text-transform: uppercase;
     display: inline-block;
     font-size: 40px;
+
     padding: 0px 10px;
     background-color: #111;
 }
