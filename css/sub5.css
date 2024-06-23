@@ -1,40 +1,6 @@
 @charset "utf-8";
 @import url('https://webfontworld.github.io/pretendard/Pretendard.css');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
-@font-face {
-    font-family: 'glazio_demoregular';
-    src: url('./font/glaziodemoregular-yqepq-webfont.eot');
-    src: url('./font/glaziodemoregular-yqepq-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./font/glaziodemoregular-yqepq-webfont.woff2') format('woff2'),
-        url('./font/glaziodemoregular-yqepq-webfont.ttf') format('truetype'),
-        url('./font/glaziodemoregular-yqepq-webfont.svg#glazio_demoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'super_candyregular';
-    src: url('./font/supercandy-rglzx-webfont.eot');
-    src: url('./font/supercandy-rglzx-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./font/supercandy-rglzx-webfont.woff2') format('woff2'),
-        url('./font/supercandy-rglzx-webfont.ttf') format('truetype'),
-        url('./font/supercandy-rglzx-webfont.svg#super_candyregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'glittenregular';
-    src: url('./font/glitten-regular-webfont.eot');
-    src: url('./font/glitten-regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./font/glitten-regular-webfont.woff2') format('woff2'),
-        url('./font/glitten-regular-webfont.woff') format('woff'),
-        url('./font/glitten-regular-webfont.ttf') format('truetype'),
-        url('./font/glitten-regular-webfont.svg#glittenregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -48,7 +14,7 @@ html {
 body {
     font-family: 'Pretendard';
     line-height: 1.6;
-    min-width: 1920px;
+    min-width: 1000px;
     overflow-x: hidden;
     width: 100%;
     height: 500px;
@@ -157,7 +123,7 @@ svg {
     width: 80%;
     min-width: 200px;
     padding: 50px;
-    font-family: 'glittenregular';
+    font-family: "DM Serif Display", serif;
     font-size: 200px;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -168,7 +134,7 @@ svg:nth-child(1) {
     top: 50%;
     left: 50%;
     fill: rgb(255, 255, 255);
-    animation: stroke 3s;
+    animation: stroke 2s;
 }
 
 @keyframes stroke {
@@ -230,7 +196,7 @@ svg:nth-child(1) {
 .main_txt {
     font-size: 18px;
     opacity: 0;
-    animation: main_bottom 1s linear 2.5s forwards;
+    animation: main_bottom 0.5s linear 2s forwards;
     margin-bottom: 10px;
 }
 
@@ -454,7 +420,7 @@ font-weight: 700;
     box-sizing: border-box;
     padding: 50px 0 40px;
     text-align: center;
-    font-family: 'glittenregular';
+    font-family: "DM Serif Display", serif;
     border-bottom: 1px solid #333;
 }
 .membership_box1 h2{
@@ -478,7 +444,7 @@ font-weight: 700;
     transition: 0.5s;
 }
 .membership_box2 h3{
-    font-family: 'glittenregular';
+    font-family: "DM Serif Display", serif;
     font-size: 26px;
     font-weight: 100;
 }
@@ -504,12 +470,12 @@ font-weight: 700;
 }
 .membership_box2_3{
     padding-top: 100px;
-    height: 600px;
+    height: 500px;
     background: url(../images/sub5/box4.png) no-repeat 50% 65%; 
 }
 .membership_box2_4{
     padding-top: 100px;
-    height: 600px;
+    height: 500px;
     background: url(../images/sub5/box5.png) no-repeat 85% 60%; 
     transition: 0.5s;
 }
@@ -595,8 +561,27 @@ font-weight: 700;
     background-color: #00000000;
     z-index: 2;
 }
-/* footer */
 
+.meb_btn{
+    margin-top: 8px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #00D687;
+    transition: 0.5s;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.meb_btn:hover{
+    background-color: #008a5c;
+}
+
+
+/* footer */
 footer {
     position: absolute;
     bottom: 0;
